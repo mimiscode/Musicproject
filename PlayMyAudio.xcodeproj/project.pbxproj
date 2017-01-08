@@ -15,7 +15,18 @@
 		636848831DE7703A002DB633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636848811DE7703A002DB633 /* LaunchScreen.storyboard */; };
 		6368488D1DE8A348002DB633 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6368488C1DE8A348002DB633 /* Audio.swift */; };
 		636848911DEB4F58002DB633 /* TrackTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636848901DEB4F58002DB633 /* TrackTableCell.swift */; };
+		636A92AA1E2283570032C669 /* PlayMyAudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A92A91E2283570032C669 /* PlayMyAudioTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		636A92AC1E2283570032C669 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6368486A1DE7703A002DB633 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 636848711DE7703A002DB633;
+			remoteInfo = PlayMyAudio;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		636848721DE7703A002DB633 /* PlayMyAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayMyAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +39,20 @@
 		636848841DE7703A002DB633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6368488C1DE8A348002DB633 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		636848901DEB4F58002DB633 /* TrackTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTableCell.swift; sourceTree = "<group>"; };
+		636A92A71E2283570032C669 /* PlayMyAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayMyAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		636A92A91E2283570032C669 /* PlayMyAudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMyAudioTests.swift; sourceTree = "<group>"; };
+		636A92AB1E2283570032C669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6368486F1DE7703A002DB633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		636A92A41E2283570032C669 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				636848741DE7703A002DB633 /* PlayMyAudio */,
+				636A92A81E2283570032C669 /* PlayMyAudioTests */,
 				636848731DE7703A002DB633 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				636848721DE7703A002DB633 /* PlayMyAudio.app */,
+				636A92A71E2283570032C669 /* PlayMyAudioTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +94,15 @@
 				6368487C1DE7703A002DB633 /* PlayMyAudio.xcdatamodeld */,
 			);
 			path = PlayMyAudio;
+			sourceTree = "<group>";
+		};
+		636A92A81E2283570032C669 /* PlayMyAudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				636A92A91E2283570032C669 /* PlayMyAudioTests.swift */,
+				636A92AB1E2283570032C669 /* Info.plist */,
+			);
+			path = PlayMyAudioTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +125,24 @@
 			productReference = 636848721DE7703A002DB633 /* PlayMyAudio.app */;
 			productType = "com.apple.product-type.application";
 		};
+		636A92A61E2283570032C669 /* PlayMyAudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 636A92B01E2283570032C669 /* Build configuration list for PBXNativeTarget "PlayMyAudioTests" */;
+			buildPhases = (
+				636A92A31E2283570032C669 /* Sources */,
+				636A92A41E2283570032C669 /* Frameworks */,
+				636A92A51E2283570032C669 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				636A92AD1E2283570032C669 /* PBXTargetDependency */,
+			);
+			name = PlayMyAudioTests;
+			productName = PlayMyAudioTests;
+			productReference = 636A92A71E2283570032C669 /* PlayMyAudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +156,11 @@
 					636848711DE7703A002DB633 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
+					};
+					636A92A61E2283570032C669 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 636848711DE7703A002DB633;
 					};
 				};
 			};
@@ -123,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				636848711DE7703A002DB633 /* PlayMyAudio */,
+				636A92A61E2283570032C669 /* PlayMyAudioTests */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +191,13 @@
 				636848831DE7703A002DB633 /* LaunchScreen.storyboard in Resources */,
 				636848801DE7703A002DB633 /* Assets.xcassets in Resources */,
 				6368487B1DE7703A002DB633 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		636A92A51E2283570032C669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +216,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		636A92A31E2283570032C669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636A92AA1E2283570032C669 /* PlayMyAudioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		636A92AD1E2283570032C669 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 636848711DE7703A002DB633 /* PlayMyAudio */;
+			targetProxy = 636A92AC1E2283570032C669 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		636848791DE7703A002DB633 /* Main.storyboard */ = {
@@ -294,6 +373,32 @@
 			};
 			name = Release;
 		};
+		636A92AE1E2283570032C669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PlayMyAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tracy.PlayMyAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayMyAudio.app/PlayMyAudio";
+			};
+			name = Debug;
+		};
+		636A92AF1E2283570032C669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PlayMyAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tracy.PlayMyAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayMyAudio.app/PlayMyAudio";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -314,6 +419,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		636A92B01E2283570032C669 /* Build configuration list for PBXNativeTarget "PlayMyAudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636A92AE1E2283570032C669 /* Debug */,
+				636A92AF1E2283570032C669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
